@@ -3,6 +3,7 @@
   <url>
     <loc>https://yusufisa.my/</loc>
     <lastmod>2026-10-20</lastmod>
+    <!-- Single-page portfolio; the FAQ and project sections are covered by this URL. -->
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

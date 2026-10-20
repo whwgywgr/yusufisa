@@ -1,12 +1,19 @@
 {
-  "name": "Yusuf Isa — Designer & Developer",
+  "name": "Yusuf Isa - Web Designer & Developer",
   "short_name": "Yusuf Isa",
-  "description": "Independent designer and front-end developer in Kuala Lumpur.",
+  "description": "Independent web designer and front-end developer in Kuala Lumpur, Malaysia.",
+  "lang": "en-MY",
+  "dir": "ltr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f4ef",
   "theme_color": "#f5f4ef",
+  "categories": [
+    "portfolio",
+    "design",
+    "technology"
+  ],
   "icons": [
     {
       "src": "assets/images/icon-192.png",
