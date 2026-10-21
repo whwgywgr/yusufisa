@@ -6,7 +6,7 @@ A personal site for **Yusuf Isa** — independent web designer and front-end dev
 - **Repository:** https://github.com/whwgywgr/yusufisa
 - **GitHub Pages URL:** https://whwgywgr.github.io/yusufisa/ (redirects to the custom domain)
 
-Built as a small, hand-written static site: semantic HTML, one stylesheet, one JavaScript file, no framework and no build step. The design is deliberately quiet: a warm neutral palette, an editorial serif, generous space, and only two glass surfaces. Projects are presented as a compact typographic index instead of a wall of mockups.
+Built as a small, hand-written static site: semantic HTML, one stylesheet, one JavaScript file, no framework and no build step. The design is quiet but graphic: charcoal surfaces, a faint grid, chunky offset borders and a dark pill navigation. Projects are presented as an index of tactile cards rather than a wall of mockups.
 
 ## Preview it locally
 
@@ -46,7 +46,7 @@ assets/favicon.svg         Vector favicon
 
 This is a finished visual starting point, but some of the content is illustrative and should be replaced with your own details:
 
-- **Projects** — Rumah, Kira and Jalan are sample case studies. Replace the names, years, descriptions and disciplines if they are not your real work.
+- **Projects** — PromptbyMe, My Timeline, SapotMe and Design Library link to live sites. Keep their names, descriptions and link targets in sync with those products.
 - **GitHub link** — now points to the real profile, `github.com/whwgywgr`. The old LinkedIn placeholder has been removed; add a verified LinkedIn URL to the contact section and JSON-LD `sameAs` if you want one.
 - **Availability** — “Q1 2027” and the booking language are written as plausible sample copy. Change them to match reality.
 - **Email** — the site uses `hello@yusufisa.my`. Set that mailbox up before launch, or replace it everywhere (including the mailto links, FAQ and copy-button value in the HTML).
@@ -59,7 +59,7 @@ Useful places to edit:
 
 - Headline and intro: `#hero-title`, `.hero__lede` in `index.html`
 - About copy: the `.about` block in `index.html`
-- Project rows: search for `project--rumah`, `project--kira`, `project--jalan`
+- Project cards: the `.project-list` block in `index.html`
 - FAQ: the `#faq` section in `index.html`
 - Contact copy: the `.contact__card` block
 - Colour palette and type: the custom properties at the top of `styles.css`
@@ -68,8 +68,8 @@ Useful places to edit:
 ## Theme behaviour
 
 - The initial theme is applied by a tiny inline script before CSS renders, so there is no bright flash in dark mode.
-- On a first visit, the site respects the operating system's light/dark preference.
-- Once someone uses the toggle, their choice is saved in `localStorage` and wins over the system setting.
+- The site opens in dark mode by default. Light mode is available from the toggle and uses the same outlined, offset-shadow language.
+- Once someone uses the toggle, their choice is saved in `localStorage` and wins on the next visit.
 - The toggle updates `aria-pressed`, its accessible label, the browser `theme-color` and the icon shown in the header.
 
 ## Accessibility notes
@@ -77,7 +77,7 @@ Useful places to edit:
 - Semantic landmarks, a skip link, one `h1` and a logical heading order.
 - The mobile menu uses a native `<dialog>`, which provides focus handling and Escape-to-close behaviour.
 - All interactive controls are keyboard reachable and have visible focus styles.
-- Entrance animations and scroll reveals stop under `prefers-reduced-motion`; glass effects are made solid under `prefers-reduced-transparency` and `prefers-contrast`.
+- Entrance animations and scroll reveals stop under `prefers-reduced-motion`; the sticky header and mobile menu fall back to solid surfaces under `prefers-reduced-transparency` and `prefers-contrast`.
 - Decorative project index marks are hidden from assistive technology.
 - The copy button has a live status message and a fallback for browsers without the Clipboard API.
 - The site works without JavaScript, apart from the optional menu, theme toggle, clock and copy action.
@@ -105,7 +105,7 @@ This is a static site. Any host that serves files will work:
 - **GitHub Pages** — this repo is published from the `main` branch root at `yusufisa.my`; a push to `main` updates the live site. Keep `CNAME` and `.nojekyll` in the root.
 - **Traditional hosting / cPanel** — upload the folder contents to `public_html`.
 
-For the custom domain, point `yusufisa.my` at the host and make sure HTTPS is enabled. The apex currently resolves to GitHub Pages, but only one of the four recommended GitHub A records is present; add all four to your DNS zone for redundancy. Point `www` at `whwgywgr.github.io` with a CNAME, not at the apex, so GitHub can issue a certificate that covers the `www` hostname. Keep the root `index.html` at the domain root.
+For the custom domain, point `yusufisa.my` at the host and make sure HTTPS is enabled. The apex resolves to all four recommended GitHub A records, and `www` is a CNAME to `whwgywgr.github.io`. GitHub's current certificate covers the apex only; `https://www.yusufisa.my` may keep showing a TLS warning until GitHub reissues a certificate that includes `www`. Keep the apex canonical until that is fixed. Keep the root `index.html` at the domain root.
 
 ## Fonts & licence
 
@@ -119,4 +119,4 @@ All three are licensed under the SIL Open Font License 1.1. The licence files ar
 
 ## A note on the craft
 
-No trackers, no cookies, no analytics, no newsletter pop-up. The glass panels are real CSS surfaces with a fallback, not flattened PNGs. The project marks and icons are CSS and SVG, and the social image is rendered from the same type and colour system.
+No trackers, no cookies, no analytics, no newsletter pop-up. The navigation, cards and controls are CSS surfaces with real borders and offset shadows, not flattened images. The project marks and icons are CSS/SVG, and the social image is rendered from the same type, border and colour system.

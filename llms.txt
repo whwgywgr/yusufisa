@@ -7,7 +7,7 @@ Contact: hello@yusufisa.my
 Location: Kuala Lumpur, Malaysia
 Availability: Booking select projects for Q1 2027
 Response time: Usually within two working days
-Last updated: 2026-10-20
+Last updated: 2026-10-21
 
 ## About
 
@@ -22,11 +22,10 @@ Yusuf works independently with founders, studios and small teams. His work sits 
 
 ## Selected work
 
-- Rumah (2026) — A neighbourhood-first rental search. Product design and build.
-- Kira (2025) — A calmer home for freelance money. Brand and interface.
-- Jalan (2025) — A travel journal for the long way round. Editorial and web.
-
-Case studies are available by email.
+- PromptbyMe (2026) — A local-first prompt library for keeping prompts, media results and the sites they produce in one place. https://whwgywgr.github.io/PromptbyMe/
+- My Timeline (2026) — A lightweight personal timeline for capturing moments, saved locally in the browser. https://whwgywgr.github.io/timeline26/
+- SapotMe (2026) — A link-in-bio and creator discovery platform where every link and click has a home. https://sapotme.com/
+- Design Library (2026) — A drop-in library for collecting HTML, CSS, JS and Markdown design references. https://whwgywgr.github.io/design-library/
 
 ## Common questions
 

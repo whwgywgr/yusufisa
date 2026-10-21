@@ -7,8 +7,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f5f4ef",
-  "theme_color": "#f5f4ef",
+  "background_color": "#141414",
+  "theme_color": "#141414",
   "categories": [
     "portfolio",
     "design",

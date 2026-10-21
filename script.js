@@ -9,8 +9,8 @@
   const themeToggle = document.querySelector("[data-theme-toggle]");
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const themeColours = {
-    light: "#f5f4ef",
-    dark: "#0d100e"
+    light: "#f2f1ec",
+    dark: "#141414"
   };
 
   /* -----------------------------------------------------------------------
