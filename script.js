@@ -308,4 +308,17 @@
       }, 2400);
     });
   }
+
+  /* Social links are placeholders until real profile URLs are supplied. */
+  const socialPlaceholders = Array.from(document.querySelectorAll("[data-social-placeholder]"));
+  const socialStatus = document.querySelector("[data-social-status]");
+
+  socialPlaceholders.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (socialStatus) {
+        socialStatus.textContent = `${link.dataset.socialPlaceholder} link coming soon.`;
+      }
+    });
+  });
 })();

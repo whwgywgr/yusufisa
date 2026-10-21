@@ -52,6 +52,7 @@ This is a finished visual starting point, but some of the content is illustrativ
 - **Email** — the site uses `hello@yusufisa.my`. Set that mailbox up before launch, or replace it everywhere (including the mailto links, FAQ and copy-button value in the HTML).
 - **Canonical / social URLs** — `https://yusufisa.my/` is already set in `index.html`, `robots.txt`, `sitemap.xml` and the JSON-LD block.
 - **SEO image** — the current share image is `assets/images/og-image.png` (1200 × 630). Update it if you change the headline or name.
+- **Social links** — the `#social` section currently uses `href="#"` placeholders for YouTube, TikTok, Facebook, Threads and WhatsApp. Replace them with the real profile URLs and remove `aria-disabled`, `title` and `data-social-placeholder` when they are ready.
 - **FAQ** — the visible questions in `#faq` and the `FAQPage` JSON-LD should be updated together.
 - **Dates** — update `dateModified` in the JSON-LD and `<lastmod>` in `sitemap.xml` when the content changes.
 
